@@ -36,7 +36,7 @@
 		/datum/reagent/blood,
 		// /datum/reagent/medicine/c2/multiver, // OCULIS EDIT
 		/datum/reagent/water/holywater,
-		/datum/reagent/consumable/ethanol,
+		// /datum/reagent/consumable/ethanol, // OCULIS EDIT
 		/datum/reagent/consumable/hot_coco,
 		/datum/reagent/consumable/yoghurt,
 		/datum/reagent/consumable/tinlux,
