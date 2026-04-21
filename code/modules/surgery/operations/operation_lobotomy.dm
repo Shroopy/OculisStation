@@ -100,4 +100,4 @@
 	preop_sound = 'sound/items/taperecorder/tape_flip.ogg'
 	success_sound = 'sound/items/taperecorder/taperecorder_close.ogg'
 	required_organ_flag = ORGAN_ROBOTIC
-	operation_flags = parent_type::operation_flags | OPERATION_MECHANIC
+	operation_flags = parent_type::operation_flags | OPERATION_MECHANIC | OPERATION_SELF_OPERABLE
