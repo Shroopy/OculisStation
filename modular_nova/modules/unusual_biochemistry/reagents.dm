@@ -38,7 +38,7 @@
 /datum/supply_pack/medical/bloodpacks/uncommon
 	name = "Uncommon Blood Pack Variety Crate"
 	desc = "Contains sixteen different uncommmon blood packs for reintroducing blood to patients." // OCULIS EDIT
-	cost = CARGO_CRATE_VALUE * 11 // about 1.6x the price of regular blood crate, since there's so much more // OCULIS EDIT
+	cost = CARGO_CRATE_VALUE * 11 // about 1.6x the price of regular blood crate, since there's that much more blood in this one // OCULIS EDIT
 	contains = list(
 		/obj/item/reagent_containers/blood/haemocyanin = 2,
 		/obj/item/reagent_containers/blood/chlorocruorin = 2,
