@@ -11,3 +11,10 @@
 2026-05-05:
   craftxbox:
   - bugfix: towercap logs & co drop to the floor when processed by big manipulators
+2026-05-09:
+  KnigTheThrasher:
+  - rscadd: bartenders can access caligram armored tan parka
+  ParboleumLoyce:
+  - rscadd: Eye covering preferences to the Scarred Eye quirk.
+  Spacemanspark:
+  - rscadd: New hairstyles for Tajara, ported from Paradise!
