@@ -241,6 +241,9 @@
 		if(!new_ai_brain.Insert(patient, movement_flags = DELETE_IF_REPLACED))
 			qdel(new_ai_brain) // You get no brain, whoops. Something really bad happened here
 
+	patient.cleanse_quirk_datums() // OCULIS ADDITION
+	SSquirks.AssignQuirks(patient, patient.client?) // OCULIS ADDITION
+
 	log_game("[key_name(patient)] used a Self-Actualization Device at [loc_name(src)].")
 
 	if(patient.dna.real_name != original_name)
