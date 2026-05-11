@@ -140,7 +140,7 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 			if(quirk_type in blacklist)
 				continue
 			// OCULIS EDIT ADDITION END
-			if(user.add_quirk(quirk_type, override_client = applied_client, unique = unique, announce = FALSE)) // OCULIS EDIT add unique
+			if(user.add_quirk(quirk_type, override_client = applied_client, add_unique = unique, announce = FALSE)) // OCULIS EDIT add unique
 				SSblackbox.record_feedback("tally", "quirks_taken", 1, "[quirk_name]")
 		else
 			stack_trace("Invalid quirk \"[quirk_name]\" in client [applied_client.ckey] preferences")
