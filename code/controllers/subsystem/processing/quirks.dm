@@ -131,7 +131,7 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 			continue
 		hardcore_quirks[quirk_type] += hardcore_value
 
-/datum/controller/subsystem/processing/quirks/proc/AssignQuirks(mob/living/user, client/applied_client, list/blacklist = list()) // OCULIS EDIT ADDITION: add blacklist arg
+/datum/controller/subsystem/processing/quirks/proc/AssignQuirks(mob/living/user, client/applied_client, list/blacklist = list(), unique = TRUE) // OCULIS EDIT ADDITION: add blacklist arg, add unique
 	var/badquirk = FALSE
 	for(var/quirk_name in applied_client.prefs.all_quirks)
 		var/datum/quirk/quirk_type = quirks[quirk_name]
@@ -140,7 +140,7 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 			if(quirk_type in blacklist)
 				continue
 			// OCULIS EDIT ADDITION END
-			if(user.add_quirk(quirk_type, override_client = applied_client, announce = FALSE))
+			if(user.add_quirk(quirk_type, override_client = applied_client, unique = unique, announce = FALSE)) // OCULIS EDIT add unique
 				SSblackbox.record_feedback("tally", "quirks_taken", 1, "[quirk_name]")
 		else
 			stack_trace("Invalid quirk \"[quirk_name]\" in client [applied_client.ckey] preferences")

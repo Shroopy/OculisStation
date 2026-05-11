@@ -237,7 +237,7 @@
 	patient.dna.update_dna_identity()
 
 	patient.cleanse_quirk_datums() // OCULIS ADDITION
-	SSquirks.AssignQuirks(patient, patient.client) // OCULIS ADDITION
+	SSquirks.AssignQuirks(patient, patient.client, unique = FALSE) // OCULIS ADDITION
 
 	if(istype(old_ai_brain))
 		var/obj/item/organ/brain/cybernetic/ai/new_ai_brain = new
