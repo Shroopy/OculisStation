@@ -95,7 +95,11 @@ GLOBAL_DATUM_INIT(communications_controller, /datum/communciations_controller, n
 		if(isnull(greenshift)) // if we're not forced to be greenshift or not - check if we are an actual greenshift
 			greenshift = SSdynamic.current_tier.tier == 0 && dynamic_report == /datum/dynamic_tier/greenshift::advisory_report
 
-		. += "<hr><h3>Nanotrasen Department of Intelligence Threat Advisory, Eidolon Sector, TCD [time2text(world.timeofday, "DDD, MMM DD")], [CURRENT_STATION_YEAR]:</h3>" // OCULIS EDIT
+		// . += "<hr><h3>Nanotrasen Department of Intelligence Threat Advisory, Spinward Sector:</h3>" // OCULIS EDIT REMOVAL
+		// OCULIS EDIT ADDITION START
+		. += "<hr><h3>Castor Station Communications Threat Advisory, Eidolon Sector</h3>"
+		. += "<hr><h3>TCD [time2text(world.timeofday, "DDD, MMM DD")], [CURRENT_STATION_YEAR]:</h3>"
+		// OCULIS EDIT ADDITION END
 		. += dynamic_report
 
 	SSstation.generate_station_goals(greenshift ? INFINITY : CONFIG_GET(number/station_goal_budget))

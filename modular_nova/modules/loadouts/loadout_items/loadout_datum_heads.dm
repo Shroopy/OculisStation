@@ -132,6 +132,11 @@
 	name = "Cap - Flat (Colorable)"
 	item_path = /obj/item/clothing/head/colourable_flatcap
 
+/datum/loadout_item/head/hflatcap
+	name = "Cap - Mobster Flat"
+	item_path = /obj/item/clothing/head/henchmen_hat
+
+
 /datum/loadout_item/head/fashionable_cap
 	name = "Cap - Baseball"
 	item_path = /obj/item/clothing/head/soft/yankee
@@ -302,7 +307,7 @@
 	group = "Costumes"
 
 /datum/loadout_item/head/rabbit_ears
-	group = "Costumes"
+	group = "Playbunny Ears"
 
 /datum/loadout_item/head/synde
 	name = "Black Space-Helmet Replica"
