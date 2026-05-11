@@ -455,7 +455,7 @@
  *
  * Returns TRUE on success, FALSE on failure (already has the quirk, etc)
  */
-/mob/living/proc/add_quirk(datum/quirk/quirktype, quirk_transfer = FALSE, client/override_client, add_unique = TRUE, announce = TRUE) // OCULIS EDIT add quirk_transfer
+/mob/living/proc/add_quirk(datum/quirk/quirktype, client/override_client, add_unique = TRUE, announce = TRUE, quirk_transfer = FALSE,) // OCULIS EDIT add quirk_transfer
 	if(has_quirk(quirktype))
 		return FALSE
 	var/qname = initial(quirktype.name)
