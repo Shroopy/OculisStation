@@ -214,7 +214,7 @@
 
 //Cargo
 /area/ruin/space/has_grav/nova/des_two/cargo
-	name = "DS-2 Warehouse"
+	name = "DS-2 Logi" // OCULIS EDIT - change to Logi
 
 /area/ruin/space/has_grav/nova/des_two/cargo/hangar
 	name = "DS-2 Hangar"
@@ -224,7 +224,7 @@
 
 //Bridge
 /area/ruin/space/has_grav/nova/des_two/bridge
-	name = "DS-2 Bridge"
+	name = "DS-2 Command Deck" // OCULIS EDIT - change to Command Deck
 	icon_state = "syndie-control"
 
 /area/ruin/space/has_grav/nova/des_two/bridge/cl
@@ -238,15 +238,17 @@
 /area/ruin/space/has_grav/nova/des_two/bridge/vault
 	name = "DS-2 Vault"
 
+/* OCULIS REMOVAL START
 /area/ruin/space/has_grav/nova/des_two/bridge/vault
 	name = "DS-2 Intel Center"
+OCULIS REMOVAL END */
 
 /area/ruin/space/has_grav/nova/des_two/bridge/eva
 	name = "DS-2 E.V.A."
 
 //Security
 /area/ruin/space/has_grav/nova/des_two/security
-	name = "DS-2 Security"
+	name = "DS-2 Enforcement" // OCULIS EDIT - change to Enforcement
 	ambience_index = AMBIENCE_DANGER
 
 /area/ruin/space/has_grav/nova/des_two/security/intel
@@ -301,18 +303,18 @@
 
 //Engineering
 /area/ruin/space/has_grav/nova/des_two/engineering
-	name = "DS-2 Engineering"
+	name = "DS-2 Applied Sciences" // OCULIS EDIT - change to Applied Sciences
 
 //Research
 /area/ruin/space/has_grav/nova/des_two/research
-	name = "DS-2 Research"
+	name = "DS-2 R&D" // OCULIS EDIT - change to
 
 /area/ruin/space/has_grav/nova/des_two/research/robotics
 	name = "DS-2 Robotics Bay"
 
 //Medbay
 /area/ruin/space/has_grav/nova/des_two/medbay
-	name = "DS-2 Medical Bay"
+	name = "DS-2 Infirmary" // OCULIS EDIT - change to Infimary
 
 /area/ruin/space/has_grav/nova/des_two/medbay/chem
 	name = "DS-2 Chemistry"

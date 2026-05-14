@@ -1549,7 +1549,7 @@
 	desc = "You are a number, you are not a free man."
 	icon_state = "card_prisoner"
 	inhand_icon_state = "orange-id"
-	registered_name = "Scum"
+	// registered_name = "Scum" // OCULIS REMOVAL
 	registered_age = null
 	trim = /datum/id_trim/job/prisoner
 
