@@ -155,6 +155,14 @@
 	room.send_message(message, src, TRUE)
 	return TRUE
 
+/mob/living/soulcatcher_soul/subtle()
+	set hidden = TRUE
+	return FALSE
+
+/mob/living/soulcatcher_soul/subtler()
+	set hidden = TRUE
+	return FALSE
+
 /mob/living/soulcatcher_soul/whisper_verb()
 	set hidden = TRUE
 	return FALSE

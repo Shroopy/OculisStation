@@ -25,6 +25,19 @@
     text-align: right;
     float: right;
   }
+  // NOVA EDIT ADDITION START
+  &_subtle_outgoing {
+    @extend .NtosChatMessage;
+    background-color: $msgcolor-subtle-outgoing;
+    text-align: right;
+    float: right;
+  }
+
+  &_subtle {
+    @extend .NtosChatMessage;
+    background-color: $msgcolor-subtle-incoming;
+  }
+  // NOVA EDIT ADDITION END
 
   &__timestamp {
     height: 0.9rem;
