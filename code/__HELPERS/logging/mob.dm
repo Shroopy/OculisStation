@@ -46,8 +46,6 @@
 		//NOVA EDIT ADDITION BEGIN
 		if(LOG_SUBTLE)
 			colored_message = "(EMOTE) (SUBTLE) [colored_message]"
-		if(LOG_SUBTLER)
-			colored_message = "(EMOTE) (SUBTLER) [colored_message]"
 		//NOVA EDIT ADDITION END
 		if(LOG_RADIO_EMOTE)
 			colored_message = "(RADIOEMOTE) [colored_message]"
