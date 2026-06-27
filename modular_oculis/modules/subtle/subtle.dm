@@ -1,4 +1,4 @@
-#define SUBTLE_ONE_TILE 1
+#define SUBTLE_RANGE 1
 
 /datum/emote/living/subtle
 	key = "subtle"
@@ -38,11 +38,11 @@
 
 	subtle_message = span_subtle("<b>[user]</b>[space]<i>[user.apply_message_emphasis(subtle_message)]</i>")
 
-	var/list/viewers = get_hearers_in_view(SUBTLE_ONE_TILE, user)
+	var/list/viewers = get_hearers_in_view(SUBTLE_RANGE, user)
 
 	var/obj/effect/overlay/holo_pad_hologram/hologram = GLOB.hologram_impersonators[user]
 	if(hologram)
-		viewers |= get_hearers_in_view(SUBTLE_ONE_TILE, hologram)
+		viewers |= get_hearers_in_view(SUBTLE_RANGE, hologram)
 	for(var/obj/item/dullahan_relay/dullahan in viewers)
 		viewers -= dullahan
 		viewers += dullahan.owner
@@ -78,4 +78,4 @@
 		return
 	usr.emote("subtle")
 
-#undef SUBTLE_ONE_TILE
+#undef SUBTLE_RANGE
