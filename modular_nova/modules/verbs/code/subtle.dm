@@ -11,6 +11,7 @@
 	message = null
 	mob_type_blacklist_typecache = list(/mob/living/brain)
 
+/* // OCULIS EDIT REMOVAL START
 /datum/config_entry/flag/play_subtler_sound
 	default = TRUE
 
@@ -19,6 +20,7 @@
 	savefile_identifier = PREFERENCE_PLAYER
 	category = PREFERENCE_CATEGORY_GAME_PREFERENCES
 	default_value = TRUE
+*/ // OCULIS EDIT REMOVAL END
 
 /datum/emote/living/subtle/run_emote(mob/user, params, type_override, intentional)
 	if(!can_run_emote(user))
@@ -70,17 +72,22 @@
 			to_chat(ghost, "[FOLLOW_LINK(ghost, user)] [subtle_message]")
 
 	for(var/mob/receiver in viewers)
+		/* // OCULIS EDIT REMOVAL START
 		if((running_emote_type & EMOTE_LEWD) && !pref_check_emote(receiver, preference = /datum/emote/living/lewd::pref_to_check))
 			continue
+		*/ // OCULIS EDIT REMOVAL END
 		receiver.show_message(subtle_message, alt_msg = subtle_message)
+		/* // OCULIS EDIT REMOVAL START
 		// Optional sound notification
 		if(!isobserver(receiver))
 			var/datum/preferences/prefs = receiver.client?.prefs
 			if(prefs && prefs.read_preference(/datum/preference/toggle/subtler_sound))
 				receiver.playsound_local(get_turf(receiver), 'sound/effects/achievement/beeps_jingle.ogg', 50)
+		*/ // OCULIS EDIT REMOVAL END
 
 	return TRUE
 
+/* // OCULIS REMOVAL START
 /*
 *	SUBTLE 2: NO GHOST BOOGALOO
 */
@@ -203,6 +210,7 @@
 				receiver.playsound_local(get_turf(receiver), 'sound/effects/achievement/glockenspiel_ping.ogg', 50)
 
 	return TRUE
+*/ // OCULIS REMOVAL END
 
 /*
 *	VERB CODE
@@ -222,6 +230,7 @@
 		return
 	usr.emote("subtle")
 
+/* // OCULIS EDIT REMOVAL START
 /*
 *	VERB CODE 2
 */
@@ -233,6 +242,7 @@
 		to_chat(usr, span_danger("Speech is currently admin-disabled."))
 		return
 	usr.emote("subtler")
+*/ // OCULIS EDIT REMOVAL END
 
 #undef SUBTLE_DEFAULT_DISTANCE
 #undef SUBTLE_ONE_TILE
