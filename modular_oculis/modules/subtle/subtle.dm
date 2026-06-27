@@ -1,9 +1,4 @@
-#define SUBTLE_DEFAULT_DISTANCE world.view
 #define SUBTLE_ONE_TILE 1
-#define SUBTLE_SAME_TILE_DISTANCE 0
-
-#define SUBTLE_ONE_TILE_TEXT "1-Tile Range"
-#define SUBTLE_SAME_TILE_TEXT "Same Tile"
 
 /datum/emote/living/subtle
 	key = "subtle"
@@ -83,9 +78,4 @@
 		return
 	usr.emote("subtle")
 
-#undef SUBTLE_DEFAULT_DISTANCE
 #undef SUBTLE_ONE_TILE
-#undef SUBTLE_SAME_TILE_DISTANCE
-
-#undef SUBTLE_ONE_TILE_TEXT
-#undef SUBTLE_SAME_TILE_TEXT
