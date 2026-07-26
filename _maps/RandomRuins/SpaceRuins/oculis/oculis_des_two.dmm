@@ -405,7 +405,7 @@
 /obj/machinery/light_switch/directional/south,
 /obj/structure/cable,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
-/area/ruin/space/has_grav/nova/des_two/service/diner)
+/area/ruin/space/has_grav/nova/des_two/service/freezer)
 "bH" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/machinery/light/cold/directional/north,
@@ -1232,7 +1232,7 @@
 /obj/machinery/light/cold/directional/south,
 /obj/structure/closet/secure_closet/freezer/meat/all_access,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
-/area/ruin/space/has_grav/nova/des_two/service/diner)
+/area/ruin/space/has_grav/nova/des_two/service/freezer)
 "eM" = (
 /obj/machinery/door/window/survival_pod/left/directional/north,
 /turf/open/floor/iron/dark/textured_large,
@@ -1308,7 +1308,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
-/area/ruin/space/has_grav/nova/des_two/service/diner)
+/area/ruin/space/has_grav/nova/des_two/service/freezer)
 "eY" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -2312,7 +2312,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
-/area/ruin/space/has_grav/nova/des_two/service/diner)
+/area/ruin/space/has_grav/nova/des_two/service/freezer)
 "ju" = (
 /obj/effect/turf_decal/box/red/corners{
 	dir = 8
@@ -3267,7 +3267,7 @@
 /area/ruin/space/has_grav/nova/des_two/bridge)
 "nc" = (
 /turf/closed/wall/r_wall/plastitanium/syndicate,
-/area/ruin/space/has_grav/nova/des_two/service/diner)
+/area/ruin/space/has_grav/nova/des_two/service/freezer)
 "nd" = (
 /obj/structure/cable,
 /obj/machinery/light/cold/directional/west,
@@ -4316,8 +4316,15 @@
 /obj/machinery/button/door/directional/east{
 	desc = "To keep the void away.";
 	id = "ds2bridge";
-	name = "Bridge Blast Door Control";
+	name = "Bridge Exterior Blast Door Control";
 	pixel_y = 9;
+	req_access = list("syndicate_leader");
+	pixel_x = 9
+	},
+/obj/machinery/button/door/directional/east{
+	id = "ds2bridgeinterior";
+	name = "Bridge Interior Blast Door Control";
+	pixel_y = -1;
 	req_access = list("syndicate_leader");
 	pixel_x = 9
 	},
@@ -5587,7 +5594,7 @@
 "wy" = (
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
 /obj/machinery/door/poddoor/preopen{
-	id = "ds2bridge"
+	id = "ds2bridgeinterior"
 	},
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -8404,7 +8411,7 @@
 /obj/machinery/light/cold/directional/north,
 /obj/structure/kitchenspike,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
-/area/ruin/space/has_grav/nova/des_two/service/diner)
+/area/ruin/space/has_grav/nova/des_two/service/freezer)
 "HL" = (
 /obj/machinery/light/cold/directional/north,
 /obj/effect/turf_decal/siding/thinplating/end,
@@ -9606,7 +9613,7 @@
 /obj/machinery/door/firedoor,
 /obj/structure/cable,
 /turf/open/floor/iron/dark/smooth_large,
-/area/ruin/space/has_grav/nova/des_two/service/diner)
+/area/ruin/space/has_grav/nova/des_two/service/freezer)
 "ME" = (
 /turf/closed/wall/r_wall/plastitanium/syndicate/nodiagonal,
 /area/ruin/space/has_grav/nova/des_two/security/lawyer)
@@ -10130,7 +10137,7 @@
 	},
 /obj/machinery/icecream_vat,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
-/area/ruin/space/has_grav/nova/des_two/service/diner)
+/area/ruin/space/has_grav/nova/des_two/service/freezer)
 "OR" = (
 /obj/structure/dresser,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -11048,7 +11055,7 @@
 	},
 /obj/machinery/gibber,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
-/area/ruin/space/has_grav/nova/des_two/service/diner)
+/area/ruin/space/has_grav/nova/des_two/service/freezer)
 "SJ" = (
 /obj/structure/chair/sofa/right,
 /turf/open/floor/carpet/red,
@@ -12296,6 +12303,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/space/has_grav/nova/des_two/engineering)
+"Xw" = (
+/turf/closed/wall/r_wall/plastitanium/syndicate/nodiagonal,
+/area/ruin/space/has_grav/nova/des_two/service/freezer)
 "Xy" = (
 /obj/machinery/chem_dispenser/fullupgrade,
 /obj/effect/turf_decal/trimline/yellow/filled/line{
@@ -12440,7 +12450,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
-/area/ruin/space/has_grav/nova/des_two/service/diner)
+/area/ruin/space/has_grav/nova/des_two/service/freezer)
 "Yh" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark,
@@ -16998,10 +17008,10 @@ iD
 je
 Ua
 go
-gT
-gT
-gT
-gT
+Xw
+Xw
+Xw
+Xw
 MD
 ZR
 dK
@@ -17063,7 +17073,7 @@ iD
 cB
 gd
 go
-gT
+Xw
 jt
 eX
 Ye
@@ -17128,7 +17138,7 @@ iD
 iD
 FL
 go
-gT
+Xw
 HJ
 OP
 SI
