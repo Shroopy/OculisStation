@@ -845,7 +845,7 @@
 /area/ruin/space/has_grav/nova/des_two/security/prison)
 "dk" = (
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
-/obj/machinery/door/poddoor/preopen{
+/obj/machinery/door/poddoor{
 	id = "ds2-spa-water"
 	},
 /turf/open/floor/plating,
@@ -1338,7 +1338,7 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/space/has_grav/nova/des_two/halls)
 "fd" = (
-/obj/machinery/door/poddoor/preopen{
+/obj/machinery/door/poddoor{
 	id = "ds2-spa-water"
 	},
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
@@ -2176,7 +2176,7 @@
 /obj/structure/transit_tube{
 	dir = 8
 	},
-/obj/machinery/door/poddoor/preopen{
+/obj/machinery/door/poddoor{
 	id = "ds2bridge"
 	},
 /obj/structure/cable,
@@ -3974,7 +3974,7 @@
 /area/ruin/space/has_grav/nova/des_two/engineering)
 "pN" = (
 /obj/structure/cable,
-/obj/machinery/door/poddoor/preopen{
+/obj/machinery/door/poddoor{
 	id = "diner-view"
 	},
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
@@ -5227,7 +5227,7 @@
 /area/ruin/space/has_grav/nova/des_two/security/prison)
 "vc" = (
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
-/obj/machinery/door/poddoor/preopen{
+/obj/machinery/door/poddoor{
 	id = "ds2bridge"
 	},
 /turf/open/floor/plating,
@@ -5433,7 +5433,7 @@
 /obj/structure/fans/tiny/forcefield{
 	dir = 4
 	},
-/obj/machinery/door/poddoor/preopen{
+/obj/machinery/door/poddoor{
 	id = "void-be-gone"
 	},
 /turf/open/floor/iron/dark/textured_half{
@@ -6526,7 +6526,7 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/ruin/space/has_grav/nova/des_two/halls)
 "Az" = (
-/obj/machinery/door/poddoor/preopen{
+/obj/machinery/door/poddoor{
 	id = "ds2-hydroponics-room"
 	},
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
@@ -10768,7 +10768,7 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/space/has_grav/nova/des_two/cargo)
 "Rt" = (
-/obj/machinery/door/poddoor/preopen{
+/obj/machinery/door/poddoor{
 	id = "ds2-spa"
 	},
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
@@ -11196,7 +11196,7 @@
 /obj/structure/fans/tiny/forcefield{
 	dir = 4
 	},
-/obj/machinery/door/poddoor/preopen{
+/obj/machinery/door/poddoor{
 	id = "void-be-gone"
 	},
 /obj/structure/marker_beacon/burgundy,
@@ -11723,7 +11723,7 @@
 /area/ruin/space/has_grav/nova/des_two/research)
 "Vj" = (
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
-/obj/machinery/door/poddoor/preopen{
+/obj/machinery/door/poddoor{
 	id = "ds2bridge"
 	},
 /obj/structure/cable,
