@@ -209,17 +209,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/nova/des_two/bridge)
-"aS" = (
-/obj/structure/lattice,
-/obj/structure/transit_tube{
-	dir = 8
-	},
-/obj/machinery/camera/xray/directional/north{
-	c_tag = "DS-2 Transit Tube";
-	network = list("ds2")
-	},
-/turf/template_noop,
-/area/space/nearstation)
 "aU" = (
 /obj/structure/cable,
 /obj/machinery/light/warm/directional/west,
@@ -1004,6 +993,11 @@
 /obj/effect/turf_decal/trimline/dark_red/line,
 /obj/effect/turf_decal/trimline/dark_red/mid_joiner,
 /obj/machinery/computer/crew/syndie,
+/obj/structure/cable,
+/obj/machinery/camera/xray/directional/west{
+	c_tag = "DS-2 Bridge";
+	network = list("ds2")
+	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/nova/des_two/bridge)
 "dM" = (
@@ -1886,6 +1880,14 @@
 	},
 /turf/open/floor/iron/white/pattern_3,
 /area/ruin/space/has_grav/nova/des_two/research/robotics)
+"hx" = (
+/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/machinery/door/poddoor{
+	id = "ds2bridge"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/space)
 "hz" = (
 /obj/structure/window/reinforced/survival_pod/spawner/directional/east,
 /obj/structure/closet/secure_closet/personal/cabinet,
@@ -2171,17 +2173,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/nova/des_two/engineering)
-"iY" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
-/obj/structure/transit_tube{
-	dir = 8
-	},
-/obj/machinery/door/poddoor{
-	id = "ds2bridge"
-	},
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/nova/des_two)
 "iZ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -3263,6 +3254,7 @@
 /obj/structure/chair/office{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark/textured_half,
 /area/ruin/space/has_grav/nova/des_two/bridge)
 "nc" = (
@@ -5230,6 +5222,7 @@
 /obj/machinery/door/poddoor{
 	id = "ds2bridge"
 	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/nova/des_two/bridge)
 "vd" = (
@@ -6345,6 +6338,12 @@
 /obj/effect/mapping_helpers/airalarm/syndicate_access,
 /turf/open/floor/iron/white/diagonal,
 /area/ruin/space/has_grav/nova/des_two/service/hydroponics)
+"zM" = (
+/obj/structure/lattice,
+/obj/structure/lattice/catwalk,
+/obj/structure/marker_beacon/burgundy,
+/turf/template_noop,
+/area/template_noop)
 "zO" = (
 /obj/machinery/light/cold/directional/west,
 /obj/structure/table,
@@ -7251,8 +7250,9 @@
 /obj/structure/transit_tube{
 	dir = 8
 	},
-/turf/open/space/basic,
-/area/space)
+/obj/structure/lattice,
+/turf/template_noop,
+/area/space/nearstation)
 "Dl" = (
 /obj/machinery/light/warm/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -10436,9 +10436,6 @@
 /obj/structure/weightmachine/weightlifter,
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/nova/des_two/security/prison)
-"PV" = (
-/turf/closed/wall/r_wall/plastitanium/syndicate/nodiagonal,
-/area/space/nearstation)
 "PX" = (
 /obj/machinery/skill_station,
 /turf/open/floor/iron/dark/textured_large,
@@ -10505,11 +10502,15 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/nova/des_two/security/prison)
 "Qk" = (
+/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
 /obj/structure/transit_tube{
 	dir = 8
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
-/turf/open/space/basic,
+/obj/machinery/door/poddoor{
+	id = "ds2bridge"
+	},
+/obj/structure/cable,
+/turf/open/floor/plating,
 /area/space)
 "Ql" = (
 /obj/machinery/grill,
@@ -11721,14 +11722,6 @@
 /obj/machinery/light/cold/directional/west,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/nova/des_two/research)
-"Vj" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
-/obj/machinery/door/poddoor{
-	id = "ds2bridge"
-	},
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/nova/des_two)
 "Vn" = (
 /obj/structure/table/wood/fancy/black,
 /turf/open/floor/catwalk_floor/iron_dark,
@@ -12437,8 +12430,9 @@
 	},
 /area/ruin/space/has_grav/nova/des_two/service/restroom)
 "Ya" = (
-/turf/open/space/basic,
-/area/space)
+/obj/structure/lattice,
+/turf/template_noop,
+/area/template_noop)
 "Yd" = (
 /obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
 /obj/structure/cable,
@@ -14201,12 +14195,12 @@ iD
 iD
 "}
 (22,1,1) = {"
-Ya
-Ya
-Ya
+iD
+iD
+iD
 wO
 Qk
-Oe
+hx
 wO
 wO
 wO
@@ -14266,14 +14260,14 @@ qS
 qS
 "}
 (23,1,1) = {"
-Ya
-Ya
-Ya
-Ya
+iD
+iD
+iD
+iD
 Dj
-Ya
-Ya
-Ya
+iD
+iD
+iD
 wO
 wC
 Hr
@@ -14331,14 +14325,14 @@ qS
 qS
 "}
 (24,1,1) = {"
-Ya
-Ya
-Ya
-Ya
+iD
+iD
+iD
+iD
 Dj
-Ya
-Ya
-Ya
+iD
+iD
+iD
 wO
 wC
 uW
@@ -14396,14 +14390,14 @@ qS
 qS
 "}
 (25,1,1) = {"
-Ya
-Ya
-Ya
-Ya
+iD
+iD
+iD
+iD
 Dj
-Ya
-Ya
-Ya
+iD
+iD
+iD
 wO
 wC
 wD
@@ -14461,13 +14455,13 @@ qS
 qS
 "}
 (26,1,1) = {"
-Ya
-Ya
-Ya
-Ya
+iD
+iD
+iD
+iD
 Dj
 Ya
-Ya
+zM
 Ya
 wO
 ky
@@ -14526,14 +14520,14 @@ qS
 qS
 "}
 (27,1,1) = {"
-Ya
-Ya
-Ya
-Ya
+iD
+iD
+iD
+iD
 Dj
-Ya
-Ya
-Ya
+iD
+iD
+iD
 wO
 ky
 ky
@@ -14591,14 +14585,14 @@ qS
 qS
 "}
 (28,1,1) = {"
-Ya
-Ya
-Ya
-Ya
+iD
+iD
+iD
+iD
 Dj
-Ya
-Ya
-Ya
+iD
+iD
+iD
 wO
 ky
 ky
@@ -14658,12 +14652,12 @@ qS
 (29,1,1) = {"
 iD
 iD
-eV
-Jc
-iY
-Vj
-Jc
-Jc
+iD
+iD
+Dj
+iD
+iD
+iD
 zu
 wy
 cp
@@ -15049,8 +15043,8 @@ iD
 iD
 iD
 iD
-PV
-aS
+iD
+vD
 fK
 vc
 lx
@@ -15438,12 +15432,12 @@ iD
 (41,1,1) = {"
 iD
 iD
-eV
-Jc
-iY
-Vj
-Jc
-Jc
+iD
+iD
+vD
+iD
+iD
+iD
 zu
 wy
 Pk
@@ -15501,14 +15495,14 @@ iD
 iD
 "}
 (42,1,1) = {"
-Ya
-Ya
-Ya
-Ya
+iD
+iD
+iD
+iD
 Dj
-Ya
-Ya
-Ya
+iD
+iD
+iD
 wO
 ky
 ky
@@ -15566,14 +15560,14 @@ qS
 qS
 "}
 (43,1,1) = {"
-Ya
-Ya
-Ya
-Ya
+iD
+iD
+iD
+iD
 Dj
-Ya
-Ya
-Ya
+iD
+iD
+iD
 wO
 ky
 ky
@@ -15631,13 +15625,13 @@ qS
 qS
 "}
 (44,1,1) = {"
-Ya
-Ya
-Ya
-Ya
+iD
+iD
+iD
+iD
 Dj
 Ya
-Ya
+zM
 Ya
 wO
 ky
@@ -15696,14 +15690,14 @@ qS
 qS
 "}
 (45,1,1) = {"
-Ya
-Ya
-Ya
-Ya
+iD
+iD
+iD
+iD
 Dj
-Ya
-Ya
-Ya
+iD
+iD
+iD
 wO
 wC
 SJ
@@ -15761,14 +15755,14 @@ qS
 qS
 "}
 (46,1,1) = {"
-Ya
-Ya
-Ya
-Ya
+iD
+iD
+iD
+iD
 Dj
-Ya
-Ya
-Ya
+iD
+iD
+iD
 wO
 wC
 uW
@@ -15826,14 +15820,14 @@ qS
 qS
 "}
 (47,1,1) = {"
-Ya
-Ya
-Ya
-Ya
+iD
+iD
+iD
+iD
 Dj
-Ya
-Ya
-Ya
+iD
+iD
+iD
 wO
 wC
 RO
@@ -15891,12 +15885,12 @@ qS
 qS
 "}
 (48,1,1) = {"
-Ya
-Ya
-Ya
+iD
+iD
+iD
 wO
 Qk
-Oe
+hx
 wO
 wO
 wO
