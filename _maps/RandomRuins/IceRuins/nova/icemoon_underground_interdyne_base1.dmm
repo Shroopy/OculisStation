@@ -479,17 +479,6 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/interdyne_planetary_base/cargo)
-"bG" = (
-/obj/machinery/door/poddoor{
-	id = "interdynecargowest"
-	},
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "interdynecargoout"
-	},
-/obj/machinery/door/firedoor/heavy,
-/turf/open/floor/plating/reinforced,
-/area/ruin/interdyne_planetary_base/cargo)
 "bH" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -499,17 +488,6 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
 	},
-/turf/open/floor/plating/reinforced,
-/area/ruin/interdyne_planetary_base/cargo)
-"bI" = (
-/obj/machinery/door/poddoor{
-	id = "interdynecargowest"
-	},
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "interdynecargoout"
-	},
-/obj/structure/fans/tiny,
 /turf/open/floor/plating/reinforced,
 /area/ruin/interdyne_planetary_base/cargo)
 "bK" = (
@@ -584,16 +562,6 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/interdyne_planetary_base/cargo)
 "bT" = (
-/obj/machinery/button/door{
-	pixel_x = 32;
-	pixel_y = 8;
-	id = "interdynecargowest"
-	},
-/obj/machinery/button/door{
-	pixel_x = 32;
-	pixel_y = -8;
-	id = "interdynecargoeast"
-	},
 /obj/machinery/computer/shuttle{
 	name = "syndicate cargo shuttle terminal";
 	desc = "Occasionally used to call in a resupply shuttle if one is in range.";
@@ -604,6 +572,9 @@
 	icon_keyboard = "syndie_key";
 	shuttleId = "syndie_cargo";
 	possible_destinations = "syndielavaland_cargo"
+	},
+/obj/machinery/button/door/directional/east{
+	id = "interdynecargo"
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/interdyne_planetary_base/cargo)
@@ -698,7 +669,7 @@
 /area/ruin/interdyne_planetary_base/cargo)
 "cf" = (
 /obj/machinery/door/poddoor{
-	id = "interdynecargoeast"
+	id = "interdynecargo"
 	},
 /obj/machinery/conveyor{
 	dir = 8;
@@ -726,7 +697,7 @@
 /area/ruin/interdyne_planetary_base/cargo)
 "ci" = (
 /obj/machinery/door/poddoor{
-	id = "interdynecargoeast"
+	id = "interdynecargo"
 	},
 /obj/machinery/conveyor{
 	dir = 8;
@@ -774,52 +745,27 @@
 	},
 /turf/open/floor/iron/diagonal,
 /area/ruin/interdyne_planetary_base/cargo)
-"cp" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/structure/cable,
-/turf/open/floor/iron/dark/textured_large,
-/area/ruin/interdyne_planetary_base/cargo)
-"cs" = (
-/obj/structure/cable,
-/turf/open/floor/iron/dark/textured_large,
-/area/ruin/interdyne_planetary_base/cargo)
-"ct" = (
-/obj/machinery/button/door/directional/south{
-	name = "window security button";
-	id = "interdynecargo";
-	req_access = list("syndicate")
-	},
-/obj/structure/cable,
-/turf/open/floor/iron/dark/textured_large,
-/area/ruin/interdyne_planetary_base/cargo)
 "cu" = (
-/obj/machinery/door/airlock/external,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
+/obj/machinery/door/poddoor{
+	id = "interdynecargo"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
-/obj/machinery/door/firedoor,
-/obj/structure/cable,
-/turf/open/floor/iron/dark/textured_large,
-/area/ruin/interdyne_planetary_base/cargo)
-"cv" = (
-/obj/effect/turf_decal/stripes/white/line{
-	dir = 4
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "interdynecargoout"
 	},
-/obj/structure/cable,
-/turf/open/floor/iron/dark/textured_large,
+/obj/machinery/door/firedoor/heavy,
+/turf/open/floor/plating/reinforced,
 /area/ruin/interdyne_planetary_base/cargo)
 "cw" = (
-/obj/machinery/door/airlock/external,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
+/obj/machinery/door/poddoor{
+	id = "interdynecargo"
+	},
+/obj/machinery/conveyor{
+	dir = 4;
+	id = "interdynecargoout"
 	},
 /obj/structure/fans/tiny,
-/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
-/obj/structure/cable,
-/turf/open/floor/iron/dark/textured_large,
+/turf/open/floor/plating/reinforced,
 /area/ruin/interdyne_planetary_base/cargo)
 "cy" = (
 /obj/effect/turf_decal/siding/brown{
@@ -6559,15 +6505,6 @@
 	},
 /turf/closed/wall/r_wall/plastitanium/syndicate/nodiagonal/shielded,
 /area/ruin/interdyne_planetary_base)
-"Al" = (
-/obj/structure/shipping_container/interdyne{
-	pixel_x = 2
-	},
-/obj/effect/turf_decal/weather/snow,
-/turf/open/floor/plating/reinforced{
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/icemoon/underground/explored)
 "AE" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -6681,30 +6618,12 @@
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/interdyne_planetary_base/science)
-"CW" = (
-/obj/structure/shipping_container/kosmologistika{
-	pixel_x = -6;
-	pixel_y = 7
-	},
-/turf/open/floor/plating/reinforced{
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/icemoon/underground/explored)
 "Dq" = (
 /obj/effect/turf_decal/trimline/dark_red/filled/corner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/interdyne_planetary_base/eng)
-"DJ" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/structure/cable,
-/turf/open/floor/plating/reinforced{
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/icemoon/underground/explored)
 "EM" = (
 /obj/machinery/hydroponics/constructable{
 	dir = 4
@@ -6727,24 +6646,16 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/ruin/interdyne_planetary_base/main/dorms)
-"ET" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/machinery/power/floodlight{
-	anchored = 1
-	},
-/obj/structure/cable,
-/turf/open/floor/plating/reinforced{
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/icemoon/underground/explored)
 "Fi" = (
 /obj/machinery/light/small/directional/west,
 /obj/item/flatpack/ammo_workbench,
 /obj/machinery/announcement_system,
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/interdyne_planetary_base/main/vault)
+"Fn" = (
+/obj/structure/closet/emcloset,
+/turf/open/floor/iron/dark/textured_large,
+/area/ruin/interdyne_planetary_base/cargo)
 "Fw" = (
 /obj/machinery/duct,
 /obj/machinery/camera/xray/directional/north{
@@ -6814,12 +6725,6 @@
 	},
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/interdyne_planetary_base/eng/disp)
-"GW" = (
-/obj/item/toy/figure/syndie,
-/turf/open/floor/plating/reinforced{
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/icemoon/underground/explored)
 "Hm" = (
 /obj/machinery/hydroponics/constructable{
 	dir = 8
@@ -6895,20 +6800,29 @@
 	},
 /turf/open/floor/iron/white/textured_large,
 /area/ruin/interdyne_planetary_base/med)
-"Iu" = (
-/obj/structure/shipping_container/kahraman{
-	pixel_y = -14
-	},
-/turf/open/floor/plating/reinforced{
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/icemoon/underground/explored)
 "Iv" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
 /obj/effect/turf_decal/weather/snow/corner,
 /obj/effect/turf_decal/weather/snow,
+/turf/open/floor/plating/reinforced{
+	initial_gas_mix = "ICEMOON_ATMOS"
+	},
+/area/icemoon/underground/explored)
+"IH" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/docking_port/stationary{
+	height = 6;
+	name = "Interdyne Hangar";
+	width = 9;
+	shuttle_id = "interdyne_cargo_home";
+	dir = 4;
+	roundstart_template = /datum/map_template/shuttle/ruin/interdyne_cargo;
+	dwidth = 2
+	},
 /turf/open/floor/plating/reinforced{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
@@ -7325,14 +7239,6 @@
 /obj/item/circuitboard/machine/powerator/interdyne,
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/interdyne_planetary_base/main/vault)
-"WQ" = (
-/obj/structure/shipping_container/donk_co{
-	pixel_x = 6
-	},
-/turf/open/floor/plating/reinforced{
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/icemoon/underground/explored)
 "WT" = (
 /obj/structure/safe{
 	dir = 4
@@ -7414,7 +7320,7 @@
 /obj/machinery/camera/xray/directional/north{
 	network = list("intd13")
 	},
-/turf/open/floor/iron/dark/textured_large,
+/turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/interdyne_planetary_base/cargo)
 "Zd" = (
 /obj/structure/marker_beacon/burgundy,
@@ -9176,7 +9082,7 @@ bn
 bD
 bS
 bD
-cp
+bS
 cU
 cX
 La
@@ -9232,10 +9138,10 @@ ab
 as
 aG
 bo
-bE
+bm
 bm
 ce
-cs
+bE
 bm
 cJ
 Sb
@@ -9291,10 +9197,10 @@ ab
 ra
 aG
 bm
-bF
+bm
 bT
 cN
-ct
+bF
 aG
 aG
 cW
@@ -9350,7 +9256,7 @@ as
 ac
 aW
 bp
-bG
+aW
 aG
 cf
 cu
@@ -9409,10 +9315,10 @@ as
 pJ
 aW
 YX
-bH
+Fn
 bU
 ch
-cv
+bH
 aW
 ab
 cY
@@ -9468,7 +9374,7 @@ bb
 rl
 aW
 br
-bI
+aW
 aG
 ci
 cw
@@ -9526,11 +9432,11 @@ Zd
 Mc
 Ur
 Mc
+IH
 Pg
 Pg
-ET
-DJ
-DJ
+Pg
+Pg
 Mc
 HK
 ab
@@ -9585,11 +9491,11 @@ BT
 LM
 LM
 LM
-Al
+LM
 rF
 rF
 rF
-WQ
+rF
 LM
 Iv
 ab
@@ -9642,13 +9548,13 @@ ab
 as
 BT
 LM
-CW
+rF
 rF
 rF
 rF
 PJ
 rF
-GW
+rF
 rF
 Iv
 as
@@ -9702,9 +9608,9 @@ as
 BT
 LM
 LM
-GW
 rF
-Iu
+rF
+rF
 rF
 rF
 rF
